@@ -7,8 +7,8 @@ public class Post {
     private String date;
     private String explanation;
     private String hdurl;
-    private String media_type;
-    private String service_version;
+    private String mediaType;
+    private String serviceVersion;
     private String title;
     private String url;
 
@@ -16,16 +16,16 @@ public class Post {
                 @JsonProperty("date") String date,
                 @JsonProperty("explanation") String explanation,
                 @JsonProperty("hdurl") String hdurl,
-                @JsonProperty("media_type") String media_type,
-                @JsonProperty("service_version") String service_version,
+                @JsonProperty("mediaType") String mediaType,
+                @JsonProperty("serviceVersion") String serviceVersion,
                 @JsonProperty("title") String title,
                 @JsonProperty("url") String url) {
         this.copyright = copyright;
         this.date = date;
         this.explanation = explanation;
         this.hdurl = hdurl;
-        this.media_type = media_type;
-        this.service_version = service_version;
+        this.mediaType = mediaType;
+        this.serviceVersion = serviceVersion;
         this.title = title;
         this.url = url;
     }
@@ -62,19 +62,19 @@ public class Post {
     }
 
     public String getMediaType() {
-        return media_type;
+        return mediaType;
     }
 
     public void setMediaType(String mediaType) {
-        this.media_type = mediaType;
+        this.mediaType = mediaType;
     }
 
     public String getServiceVersion() {
-        return service_version;
+        return serviceVersion;
     }
 
     public void setServiceVersion(String serviceVersion) {
-        this.service_version = serviceVersion;
+        this.serviceVersion = serviceVersion;
     }
 
     public String getTitle() {
@@ -100,8 +100,8 @@ public class Post {
                 ", data='" + date + '\'' +
                 ", explanation='" + explanation + '\'' +
                 ", hdurl='" + hdurl + '\'' +
-                ", media_type='" + media_type + '\'' +
-                ", service_version='" + service_version + '\'' +
+                ", media_type='" + mediaType + '\'' +
+                ", service_version='" + serviceVersion + '\'' +
                 ", title='" + title + '\'' +
                 ", url='" + url + '\'' +
                 '}';

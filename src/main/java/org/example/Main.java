@@ -23,6 +23,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Paths;
+import java.util.List;
 
 public class Main {
     public static final String SERVICE_URL = "https://api.nasa.gov/planetary/apod?api_key=AJCUvFbuKVFnbkpnzUipJGCm8QkyefC2PhBrdY4E";
@@ -62,6 +63,7 @@ public class Main {
         Post posts = mapper.readValue(response.getEntity().getContent(),
                 new TypeReference<>() {
                 });
+        System.out.println(posts.getUrl());
 
         loadImage(Paths.get(
                 new URI(posts.getUrl())
